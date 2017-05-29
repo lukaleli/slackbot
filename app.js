@@ -14,7 +14,7 @@ const TIME_ZONE = 'Europe/Berlin'
 let previousCount = 0
 
 if (!TOKEN) {
-  throw Error('BOT_API_TOKEN not specified')
+  throw new Error('BOT_API_TOKEN not specified')
 }
 
 const bot = new SlackBot({
@@ -23,6 +23,7 @@ const bot = new SlackBot({
 })
 
 const task = () => {
+  console.log('--- TASK STARTED ---')
   fetchCount()
     .then(count => {
       bot.postMessageToChannel(
@@ -64,6 +65,7 @@ const onDirectMessage = channel => {
 }
 
 bot.on('start', () => {
+  console.log('--- BOT STARTED ---')
   new CronJob(CRON_PATTERN, task, onCronError, true, TIME_ZONE)
 })
 
