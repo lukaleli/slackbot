@@ -1,3 +1,3 @@
 # Wertehendl slackbot
 
-Every push to master branch causes redeployment on Heroku.
+Every push to master branch causes automatic deployment to Heroku.
