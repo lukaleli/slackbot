@@ -1,3 +1,4 @@
+const SlackBot = require('slackbots')
 const CronJob = require('cron').CronJob
 const fetchCount = require('./fetcher')
 const getMessage = require('./messages')
