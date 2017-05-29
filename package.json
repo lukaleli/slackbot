@@ -1,0 +1,16 @@
+{
+  "name": "wertehaenchen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lukasz Lelinski (http://github.com/lukaleli)",
+  "license": "MIT",
+  "dependencies": {
+    "cron": "1.2.1",
+    "node-fetch": "1.6.3",
+    "slackbots": "1.0.2"
+  }
+}
